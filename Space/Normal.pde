@@ -31,7 +31,7 @@ class Normal {
     pushMatrix();
     stroke(0, normColor, normColor);
     fill(0, normColor, normColor);
-    ellipse((float)x_pos, (float)y_pos, 30, 30);
+    ellipse((float)x_pos, (float)y_pos, 10, 10);
     popMatrix();
     
   }
