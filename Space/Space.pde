@@ -14,7 +14,10 @@ void setup() {
     double x = 250.0;
     double y = 250.0;
     int c = (int)(200*Math.random()+100);
-    particles[i] = new Normal(x,y,c,a,s);
+    if((int)(10*Math.random()+1) < 2)
+      particles[i] = new Oddball(x,y,c,a,s);
+    else
+      particles[i] = new Normal(x,y,c,a,s);
   }
 } //end of setup
  
